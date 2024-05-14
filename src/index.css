@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(245, 253, 255);
+  font-family: sans-serif, Arial;
+}
+
+.expense-tracker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  background-color: aqua;
+  height: 500px;
+  width: 50%;
+}
+.expense-tracker h1 {
+  font-size: 4rem;
+}
+
+.input-field input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
