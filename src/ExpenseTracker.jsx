@@ -6,23 +6,6 @@ const ExpenseTracker = () => {
   const [amt, setAmt] = useState("");
   const [totalAmt, setTotalAmt] = useState(0);
 
-  useEffect(() => {
-    const storedItems = localStorage.getItem("expenseItems");
-    if (storedItems) {
-      setItems(JSON.parse(storedItems));
-    }
-
-    const storedAmt = localStorage.getItem("expenseAmt");
-    if (storedAmt) {
-      setAmt(parseFloat(storedAmt));
-    }
-  }, []);
-
-  useEffect(() => {
-    localStorage.setItem("expenseItems", JSON.stringify(items));
-    localStorage.setItem("expenseAmt", totalAmt);
-  }, [items, totalAmt]);
-
   function handleInputChange(e) {
     setNewItem(e.target.value);
   }
@@ -37,6 +20,7 @@ const ExpenseTracker = () => {
       setItems((prevItem) => [...prevItem, newObjItem]);
       setNewItem("");
       setAmt("");
+      setTotalAmt("");
       setTotalAmt((prevTotal) => prevTotal + parseFloat(amt));
     }
   }
