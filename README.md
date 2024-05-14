@@ -8,4 +8,3 @@ Build using `React.js`
 
 # 🎥 Here what project looks like
 
-<a href="./public/project-output.mp4">
