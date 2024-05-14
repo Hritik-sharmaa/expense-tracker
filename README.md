@@ -1,12 +1,11 @@
-<<<<<<< HEAD
-# React + Vite
+# Expense Tracker
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Website where you can track your expense and it shows the total amt also.<br>
+Build using `React.js`
 
-Currently, two official plugins are available:
+# 🛠 Tools
+- `React.js`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-=======
-# expense-tracker
->>>>>>> b9d919cdc066a9a1edb068044f2e8265b95a575e
+# 🎥 Here what project looks like
+
+<a href="./public/project-output.mp4">
