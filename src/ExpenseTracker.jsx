@@ -46,28 +46,27 @@ const ExpenseTracker = () => {
       <h1>Expense Tracker</h1>
       <div className="main">
         <div className="input-field">
-          <label>Item: </label>
+          <label>Item Name </label>
           <input
             type="text"
             placeholder="Enter item name..."
             onChange={handleInputChange}
             value={newItem}
           />
-          <label>Item Amount: </label>
+          <label>Item Amount </label>
           <input
             type="number"
             placeholder="enter the item amount..."
             onChange={handleAmtChange}
             value={amt}
-            aria-label="fullname"
           />
         </div>
         <div className="item-details">
           <ul>
             {items.map((item, index) => (
-              <li key={index}>
+              <li key={index} className="list-item">
                 <span>
-                  {item.name}: ₹{item.amount}
+                  {index + 1}. {item.name}: ₹{item.amount}
                 </span>
               </li>
             ))}
@@ -76,7 +75,9 @@ const ExpenseTracker = () => {
         <div className="total-amt">
           <h5>Total: ₹{totalAmt}</h5>
         </div>
-        <button onClick={handleItemChange}>add item</button>
+        <button onClick={handleItemChange} className="add-item-btn">
+          Add Item
+        </button>
       </div>
     </div>
   );

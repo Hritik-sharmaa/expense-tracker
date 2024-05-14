@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: rgb(245, 253, 255);
+  background-color: white;
   font-family: sans-serif, Arial;
 }
 
@@ -18,12 +18,25 @@ body {
 }
 
 .main {
-  background-color: aqua;
-  height: 500px;
-  width: 50%;
+  height: 300px;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px;
+  border-radius: 20px;
 }
+
 .expense-tracker h1 {
+  margin-bottom: 50px;
   font-size: 4rem;
+  color: rgb(187, 187, 187);
+  transition: all 0.3s ease-in-out;
+}
+
+.expense-tracker h1:hover {
+  color: coral;
 }
 
 .input-field input {
@@ -31,4 +44,71 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 20px;
+  border: 2px solid rgb(241, 241, 241);
+  outline: none;
+  width: 300px;
+  height: 45px;
+  border-radius: 25px;
+  padding-left: 20px;
+  background: transparent;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.input-field input:focus {
+  border: 2px solid coral;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-field label {
+  font-family: cursive;
+  color: rgb(173, 172, 172);
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.list-item {
+  list-style: none;
+  text-align: left;
+  margin-right: 170px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  color: coral;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.total-amt h5 {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  color: rgb(124, 124, 124);
+  transition: all 0.3s ease;
+}
+
+.total-amt h5:hover {
+  color: coral;
+}
+
+.add-item-btn {
+  outline: none;
+  background-color: coral;
+  color: white;
+  border: 2px solid transparent;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all 0.3s ease-out;
+  font-weight: 600;
+}
+
+.add-item-btn:hover {
+  border: 2px solid coral;
+  color: coral;
+  background-color: transparent;
 }
