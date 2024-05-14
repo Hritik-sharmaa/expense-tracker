@@ -5,7 +5,7 @@ const ExpenseTracker = () => {
   const [newItem, setNewItem] = useState("");
   const [amt, setAmt] = useState("");
   const [totalAmt, setTotalAmt] = useState(0);
-
+  
   function handleInputChange(e) {
     setNewItem(e.target.value);
   }
@@ -16,14 +16,14 @@ const ExpenseTracker = () => {
 
   function handleItemChange() {
     if (newItem.trim() !== "" && amt.trim() !== "") {
-      const newObjItem = { name: newItem, amount: parseFloat(amt) };
-      setItems((prevItem) => [...prevItem, newObjItem]);
+      const newItemObj = { name: newItem, amount: parseFloat(amt) };
+      setItems((prevItem) => [...prevItem, newItemObj]);
       setNewItem("");
       setAmt("");
-      setTotalAmt("");
       setTotalAmt((prevTotal) => prevTotal + parseFloat(amt));
     }
   }
+  
 
   return (
     <div className="expense-tracker">
