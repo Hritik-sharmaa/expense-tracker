@@ -7,4 +7,5 @@ Build using `React.js`
 - `React.js`
 
 # 🎥 Here what project looks like
+https://github.com/Hritik-sharmaa/expense-tracker/assets/130376335/67639795-3f22-48ed-b97c-23965ef0d101
 
